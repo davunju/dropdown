@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css">
+    <title>Dropdown Navigation</title>
+  </head>
+  <body class="bg-white">
+    <header class="w-full shadow mb-[3rem]">
+      <nav
+      class="w-[90%] mx-auto p-4 flex gap-5 justify-between items-center text-gray-500 font-[Epilogue] font-medium"
+  > 
+  <div class="flex gap-5">
+    <img
+    src="assets/logo.svg"
+    alt="snap logo"
+    class="mt-2"
+  />
+  <button id="nav-button" class="inline-flex items-center relative">
+    <span class="hover:font-semibold">Features</span>
+    <span class="ml-1">
+      <img src="assets/icon-arrow-down.svg" id="arrow-down" />
+      <img src="assets/icon-arrow-up.svg" class="hidden" id="arrow-up" />
+    </span>
+    <ul
+      class="absolute py-2 px-5 top-12 right-[0.05rem] bg-white text-sm rounded shadow-lg hidden"
+      id="nav-link"
+    >
+      <li class="py-1 pl-0">
+        <a href="#" class="flex gap-2 items-center">
+          <img src="assets/icon-todo.svg" class="size-3" />
+          <span>TodoList</span>
+        </a>
+      </li>
+      <li class="py-1 pl-0">
+        <a href="#" class="flex gap-2 items-center">
+          <img src="assets/icon-calendar.svg" class="size-3" />
+          <span>Calendar</span>
+        </a>
+      </li>
+      <li class="py-1 pl-0">
+        <a href="#" class="flex gap-2 items-center">
+          <img src="assets/icon-reminders.svg" class="size-4" />
+          <span>Reminders</span>
+        </a>
+      </li>
+      <li class="py-1 pl-0">
+        <a href="#" class="flex gap-2 items-center">
+          <img src="assets/icon-planning.svg" class="size-3" />
+          <span>Planning</span>
+        </a>
+      </li>
+    </ul>
+  </button>
+  <button id="nav-button2" class="flex items-center relative">
+    <span class="hover:font-semibold">Company</span>
+    <span class="ml-1">
+      <img src="assets/icon-arrow-down.svg" id="iconDown" />
+      <img src="assets/icon-arrow-up.svg" class="hidden" id="iconUp" />
+    </span>
+    <ul
+      class="absolute top-12 bg-white rounded px-2 py-3 text-sm shadow-lg hidden"
+      id="nav-link2"
+    >
+      <li class="mb-2 divide"><a href="">History</a></li>
+      <li class="mb-2"><a href="">Our Team</a></li>
+      <li><a href="">Blog</a></li>
+    </ul>
+  </button>
+  <button><a href="" class="hover:font-semibold"><p>Careers</p></a></button>
+  <button><a href="" class="hover:font-semibold"><p>About</p></a></button>
+  </div>
+    <div class="flex gap-5">
+      <button class="hover:font-semibold">Login</button>
+      <button
+          class="hover:font-semibold border-2 py-2 px-5 rounded-full"
+      >
+        Register
+      </button>
+    </div>
+    
+    <button class="hidden max-[600px]:flex max-[600px]:items-center max-[600px]:relative">
+      <img src="assets/icon-menu.svg" id="iconMenu" class="hidden max-[600px]:inline-flex">
+      <img src="assets/icon-close-menu.svg" id="iconCloseMenu" class="hidden">
+    </button>
+  </nav>
+    </header>
+    
+    <main
+      class="w-[80%] flex gap-5 m-auto mt-[2rem] font-[Epilogue] max-[600px]:flex max-[600px]:flex-col-reverse max-[600px]:max-w-[100%] max-[600px]:my-0"
+    >
+      <section class="max-[600px]:flex max-[600px]:flex-col max-[600px]:items-center">
+        <h1
+          class="text-[5rem] leading-[4rem] font-extrabold mt-[2rem] max-[600px]:text-[3rem] max-[600px]:text-center max-[470px]:text-[2rem] max-[470px]:mt-[1rem]"
+        >
+          Make 
+          remote work
+        </h1>
+        <p
+          class="mt-[2.5rem] w-[80%] font-medium leading-relaxed text-gray-500 max-[600px]:text-center max-[600px]:max-w-[100%] max-[600px]:mt-[1rem] max-[400px]:mt-[0.3rem] max-[600px]:px-2"
+        >
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button
+          class="mt-[2.5rem] bg-black px-6 py-3 text-white rounded-xl hover:bg-transparent hover:text-black hover:border hover:border-slate-500 max-[600px]:mt-[2rem] hover:rounded-none"
+        >
+          Learn more
+        </button>
+        <div
+          class="flex items-center justify-between mt-[3rem] max-w-[550px] max-[600px]:justify-center max-[600px]:gap-5 max-[600px]:mt-[2.5rem] max-[400px]:gap-2"
+        >
+          <img src="assets/client-databiz.svg" class="max-[600px]:w-[5rem] max-[400px]:w-[4rem]" />
+          <img
+            src="assets/client-audiophile.svg"
+            class="max-[600px]:w-[5rem] max-[400px]:w-[4rem]"
+          />
+          <img src="assets/client-meet.svg" class="max-[600px]:w-[5rem] max-[400px]:w-[4rem]" />
+          <img src="assets/client-maker.svg" class="max-[600px]:w-[5rem] max-[400px]:w-[4rem]" />
+        </div>
+      </section>
+      <section>
+        <img
+          src="assets/image-hero-desktop.png"
+          class="h-[70vh] max-[600px]:hidden"
+        />
+        <img
+          src="assets//image-hero-mobile.png"
+          class="hidden max-[600px]:block max-[600px]:mb-5"
+        />
+      </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
