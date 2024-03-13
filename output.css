@@ -810,6 +810,10 @@ video {
     margin-top: 1rem;
   }
 
+  .max-\[1665px\]\:mt-\[2rem\] {
+    margin-top: 2rem;
+  }
+
   .max-\[1665px\]\:text-\[2rem\] {
     font-size: 2rem;
   }
