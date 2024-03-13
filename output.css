@@ -841,6 +841,16 @@ video {
   }
 }
 
+@media (max-width: 1440px) {
+  .max-\[1440px\]\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
+  .max-\[1440px\]\:leading-\[3rem\] {
+    line-height: 3rem;
+  }
+}
+
 @media (max-width: 1350px) {
   .max-\[1350px\]\:text-\[18px\] {
     font-size: 18px;
