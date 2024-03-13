@@ -628,10 +628,6 @@ video {
   height: 100vh;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -658,10 +654,6 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .rounded {
@@ -732,8 +724,8 @@ video {
   font-family: Epilogue;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .text-\[5rem\] {
@@ -743,14 +735,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[3rem\] {
-  font-size: 3rem;
-}
-
-.text-\[2rem\] {
-  font-size: 2rem;
 }
 
 .font-extrabold {
@@ -830,16 +814,12 @@ video {
     margin-top: 3rem;
   }
 
-  .max-\[1665px\]\:text-\[1rem\] {
-    font-size: 1rem;
+  .max-\[1665px\]\:text-\[27px\] {
+    font-size: 27px;
   }
 
   .max-\[1665px\]\:text-\[4rem\] {
     font-size: 4rem;
-  }
-
-  .max-\[1665px\]\:text-\[2rem\] {
-    font-size: 2rem;
   }
 
   .max-\[1665px\]\:leading-\[4rem\] {
@@ -847,28 +827,27 @@ video {
   }
 }
 
-@media (max-width: 1300px) {
-  .max-\[1300px\]\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .max-\[1300px\]\:text-\[3rem\] {
+@media (max-width: 1500px) {
+  .max-\[1500px\]\:text-\[3rem\] {
     font-size: 3rem;
   }
 
-  .max-\[1300px\]\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
+  .max-\[1500px\]\:leading-\[2rem\] {
+    line-height: 2rem;
   }
 
-  .max-\[1300px\]\:leading-\[3rem\] {
+  .max-\[1500px\]\:leading-\[3rem\] {
     line-height: 3rem;
   }
 }
 
-@media (max-width: 1200px) {
-  .max-\[1200px\]\:text-\[3rem\] {
-    font-size: 3rem;
+@media (max-width: 1350px) {
+  .max-\[1350px\]\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .max-\[1350px\]\:text-\[22px\] {
+    font-size: 22px;
   }
 }
 
@@ -965,10 +944,6 @@ video {
   .max-\[600px\]\:w-\[5rem\] {
     width: 5rem;
   }
-
-  .max-\[600px\]\:max-w-\[100\%\] {
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 470px) {
@@ -998,9 +973,5 @@ video {
 @media (min-width: 769px) {
   .min-\[769px\]\:p-\[3rem\] {
     padding: 3rem;
-  }
-
-  .min-\[769px\]\:text-\[2rem\] {
-    font-size: 2rem;
   }
 }
