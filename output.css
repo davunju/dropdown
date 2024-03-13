@@ -624,6 +624,14 @@ video {
   height: 1rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -735,6 +743,14 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .font-extrabold {
