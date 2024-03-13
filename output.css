@@ -934,6 +934,10 @@ video {
   .max-\[768px\]\:text-\[3rem\] {
     font-size: 3rem;
   }
+
+  .max-\[768px\]\:leading-relaxed {
+    line-height: 1.625;
+  }
 }
 
 @media (max-width: 600px) {
