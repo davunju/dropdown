@@ -16,50 +16,53 @@
     <title>Dropdown Navigation</title>
   </head>
   <body class="bg-white h-[100vh]">
-    <header class="w-full shadow mb-[3rem]">
+    <header class="w-full shadow mb-[3rem] max-[768px]:shadow-none">
       <nav
-        class="w-[90%] mx-auto p-4 flex justify-between items-center text-gray-500 font-[Epilogue] font-medium"
+        class="w-[90%] max-[768px]:w-full mx-auto p-4 flex justify-between items-center text-gray-500 font-[Epilogue] font-medium relative"
       >
-        <div class="flex gap-10">
-          <div>
-            <img src="assets/logo.svg" alt="snap logo" class="mt-2" />
-          </div>
-          <button
-            id="nav-button"
-            class="inline-flex items-center relative max-[768px]:hidden"
-          >
-            <span class="hover:font-semibold">Features</span>
-            <span class="ml-1">
-              <img src="assets/icon-arrow-down.svg" id="arrow-down" />
-              <img
-                src="assets/icon-arrow-up.svg"
-                class="hidden"
-                id="arrow-up"
-              />
-            </span>
+        <div>
+          <img src="assets/logo.svg" alt="snap logo" class="mt-2" />
+        </div>
+        <div
+          id="sidebar-mobile"
+          class="flex gap-10 max-[768px]:w-[50%] max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:items-start max-[768px]:absolute max-[768px]:top-20 max-[768px]:right-0 max-[768px]:px-5 max-[768px]:bg-white max-[768px]:h-[100vh]"
+        >
+          <button id="nav-button" class="relative">
+            <div class="flex items-center gap-1">
+              <div class="hover:font-semibold">Features</div>
+              <div class="ml-1">
+                <img src="assets/icon-arrow-down.svg" id="arrow-down" />
+                <img
+                  src="assets/icon-arrow-up.svg"
+                  class="hidden"
+                  id="arrow-up"
+                />
+              </div>
+            </div>
+
             <ul
-              class="absolute py-2 px-5 top-12 right-[0.05rem] bg-white text-sm rounded shadow-lg hidden"
+              class="max-[768px]:relative max-[768px]:p-0 max-[768px]:top-1 max-[768px]:left-4 max-[768px]:rounded-none max-[768px]:shadow-none absolute py-2 px-5 top-12 right-[0.05rem] bg-white text-sm rounded shadow-lg hidden"
               id="nav-link"
             >
-              <li class="py-1 pl-0">
+              <li class="py-1 pl-0 max-[768px]:p-3">
                 <a href="#" class="flex gap-2 items-center">
                   <img src="assets/icon-todo.svg" class="size-3" />
                   <span>TodoList</span>
                 </a>
               </li>
-              <li class="py-1 pl-0">
+              <li class="py-1 pl-0 max-[768px]:p-3">
                 <a href="#" class="flex gap-2 items-center">
                   <img src="assets/icon-calendar.svg" class="size-3" />
                   <span>Calendar</span>
                 </a>
               </li>
-              <li class="py-1 pl-0">
+              <li class="py-1 pl-0 max-[768px]:p-3">
                 <a href="#" class="flex gap-2 items-center">
                   <img src="assets/icon-reminders.svg" class="size-4" />
                   <span>Reminders</span>
                 </a>
               </li>
-              <li class="py-1 pl-0">
+              <li class="py-1 pl-0 max-[768px]:p-3">
                 <a href="#" class="flex gap-2 items-center">
                   <img src="assets/icon-planning.svg" class="size-3" />
                   <span>Planning</span>
@@ -67,45 +70,50 @@
               </li>
             </ul>
           </button>
-          <button
-            id="nav-button2"
-            class="flex items-center relative max-[768px]:hidden"
-          >
-            <span class="hover:font-semibold">Company</span>
-            <span class="ml-1">
-              <img src="assets/icon-arrow-down.svg" id="iconDown" />
-              <img src="assets/icon-arrow-up.svg" class="hidden" id="iconUp" />
-            </span>
+          <button id="nav-button2" class="relative">
+            <div class="flex items-center gap-1">
+              <div class="hover:font-semibold">Company</div>
+              <div class="ml-1">
+                <img src="assets/icon-arrow-down.svg" id="iconDown" />
+                <img
+                  src="assets/icon-arrow-up.svg"
+                  class="hidden"
+                  id="iconUp"
+                />
+              </div>
+            </div>
             <ul
-              class="absolute top-12 bg-white rounded px-2 py-3 text-sm shadow-lg hidden"
+              class="hidden max-[768px]:relative max-[768px]:p-0 max-[768px]:rounded-none max-[768px]:shadow-none max-[768px]:top-1 max-[768px]:left-5 max-[768px]:text-start absolute top-12 bg-white rounded px-2 py-3 text-sm shadow-lg"
               id="nav-link2"
             >
-              <li class="mb-2 divide"><a href="">History</a></li>
-              <li class="mb-2"><a href="">Our Team</a></li>
-              <li><a href="">Blog</a></li>
+              <li class="mb-2 max-[768px]:p-2"><a href="">History</a></li>
+              <li class="mb-2 max-[768px]:p-2"><a href="">Our Team</a></li>
+              <li class="max-[768px]:p-2"><a href="">Blog</a></li>
             </ul>
           </button>
-          <button class="max-[768px]:hidden">
+          <button class="">
             <a href="" class="hover:font-semibold"><p>Careers</p></a>
           </button>
-          <button class="max-[768px]:hidden">
+          <button class="">
             <a href="" class="hover:font-semibold"><p>About</p></a>
           </button>
+          <div
+            class="flex gap-10 max-[768px]:gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:mx-auto"
+          >
+            <button class="hover:font-semibold">Login</button>
+            <button
+              class="hover:font-semibold border-2 py-2 px-5 rounded-full max-[768px]:rounded-lg"
+            >
+              Register
+            </button>
+          </div>
         </div>
-        <div class="flex gap-10 max-[768px]:hidden">
-          <button class="hover:font-semibold">Login</button>
-          <button class="hover:font-semibold border-2 py-2 px-5 rounded-full">
-            Register
-          </button>
-        </div>
+
         <button
-          class="hidden max-[768px]:flex max-[768px]:items-center max-[768px]:relative"
+          id="button3"
+          class="max-[768px]:flex max-[768px]:items-center hidden"
         >
-          <img
-            src="assets/icon-menu.svg"
-            id="iconMenu"
-            class="hidden max-[768px]:block"
-          />
+          <img src="assets/icon-menu.svg" id="iconMenu" class="" />
           <img
             src="assets/icon-close-menu.svg"
             id="iconCloseMenu"
