@@ -872,10 +872,6 @@ video {
     top: 5rem;
   }
 
-  .max-\[768px\]\:top-0 {
-    top: 0px;
-  }
-
   .max-\[768px\]\:mx-auto {
     margin-left: auto;
     margin-right: auto;
